@@ -15,6 +15,5 @@ printf("Size of int: %zu byte(s)\n", alignof(intType));
 printf("Size of long int: %zu byte(s)\n", alignof(longType));
 printf("Size of long long int: %zu byte(s)\n", alignof(longlongType));
 printf("Size of float: %zu byte(s)\n", alignof(floatType));
-#warning it is allowed
 return (0);
 }
