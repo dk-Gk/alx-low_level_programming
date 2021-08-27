@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include <stddef.h>
+#include <stdalign.h>
 /**
  * main - it is the main
  * Return: returns 0
