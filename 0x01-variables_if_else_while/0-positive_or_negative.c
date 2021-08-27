@@ -4,6 +4,9 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - 0-positive_or_negative
+ */
 int main(void)
 {
 int n;
