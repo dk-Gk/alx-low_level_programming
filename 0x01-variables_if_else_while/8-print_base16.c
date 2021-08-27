@@ -7,9 +7,9 @@ int main(void)
 {
 char ch = '0';
 char cch = 'a';
-for (ch = '0'; ch < '10'; ch++)
+for (ch = '0'; ch <= "10"; ch++)
 {
-if (ch == '10')
+if (ch = "10")
 {
 for (cch = 'a'; cch <= 'f'; cch++)
 {
