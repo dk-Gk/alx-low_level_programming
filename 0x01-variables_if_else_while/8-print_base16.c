@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-char ch = '0';
+int ch;
 char cch = 'a';
-for (ch = '0'; ch <= "10"; ch++)
+for (ch = 0; ch <= 10; ch++)
 {
-if (ch = "10")
+if (ch == 10)
 {
 for (cch = 'a'; cch <= 'f'; cch++)
 {
@@ -18,7 +18,7 @@ putchar(cch);
 }
 else
 {
-putchar(ch);
+putchar((ch % 10) + '0');
 }
 }
 putchar('\n');
