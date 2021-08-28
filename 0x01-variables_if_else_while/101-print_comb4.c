@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all possible combo of two digits 0-9
+ * main - prints all possible combo of three digits 0-9
  * Return: returns 0
  */
 int main(void)
