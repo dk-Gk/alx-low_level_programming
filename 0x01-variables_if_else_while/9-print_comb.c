@@ -14,6 +14,7 @@ if (i < 9)
 putchar(44);
 putchar(' ');
 }
+putchar('\n');
 }
 return (0);
 }
