@@ -12,7 +12,7 @@ for (i = 0; i < 10; i++)
 {
 for (j = i + 1; j < 10; j++)
 {
-for (z = i +2; z < 10; z++)
+for (z = j + 1; z < 10; z++)
 {
 putchar((i % 10) + '0');
 putchar((j % 10) + '0');
