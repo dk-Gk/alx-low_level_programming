@@ -11,7 +11,7 @@ int i;
 char j = _putchar(c);
 for (b = 'a'; b <= 'z'; b++)
 {
-if (c == b || j == b)
+if (j == b)
 {
 i = 0;
 }
