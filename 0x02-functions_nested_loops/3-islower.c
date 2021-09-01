@@ -8,9 +8,10 @@ int _islower(int c)
 {
 char b;
 int i;
+char j = _putchar(c)
 for (b = 'a'; b <= 'z'; b++)
 {
-if (c == b || _putchar(c + '0') == b)
+if (c == b || j == b)
 {
 i = 0;
 }
