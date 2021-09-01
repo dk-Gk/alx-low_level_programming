@@ -3,7 +3,7 @@
  * _islower(int c) - check alphabet case
  * Return: 1 if true and 0 if not
  */
-int _islower(int c);
+int _islower(int c)
 {
 char b;
 for (b = 'a'; b <= 'z'; b++)
