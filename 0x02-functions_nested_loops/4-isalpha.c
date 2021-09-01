@@ -4,7 +4,7 @@
  *@c: the number
  * Return: Always 0
  */
-int _isalpha(int c)
+int test_isalpha(int c)
 {
 char b;
 char d;
