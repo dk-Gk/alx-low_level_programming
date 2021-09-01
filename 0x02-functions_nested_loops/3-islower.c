@@ -6,15 +6,17 @@
 int _islower(int c)
 {
 char b;
+int i;
 for (b = 'a'; b <= 'z'; b++)
 {
 if (c == b)
 {
-return (1);
+i = 0;
 }
 else
 {
-return (0);
+i = 1;
 }
 }
+return (i);
 }
