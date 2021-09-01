@@ -4,5 +4,6 @@
 int _putchar(char c);
 void print_alphabet_x10(void);
 void print_alphabet(void);
-int test_islower(int c);
+int _islower(int c);
+int _isalpha(int c);
 #endif
