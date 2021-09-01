@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * main - print with out standard library
+ * main - print alphabets
  * Return: Always 0
  */
 void print_alphabet(void)
 {
-char c
-for (c = 'a'; c <= 'z')
+char c;
+for (c = 'a'; c <= 'z'; c++)
 {
-_putchar(i);
+_putchar(c);
 }
 _putchar('\n')
 }
