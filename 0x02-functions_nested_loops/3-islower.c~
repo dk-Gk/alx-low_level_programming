@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+ * int _islower(int c) - print alphabets
+ * Return: Always 0
+ */
+int int _islower(int c);
+{
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
+}
+_putchar('\n');
+}
