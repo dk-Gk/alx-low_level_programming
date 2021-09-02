@@ -24,6 +24,7 @@ if (j < 9)
 {
 _putchar(44);
 _putchar(' ');
+_putchar(' ');
 }
 }
 _putchar('\n');
