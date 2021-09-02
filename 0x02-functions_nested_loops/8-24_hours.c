@@ -1,14 +1,20 @@
 #include "main.h"
 /**
- * _abs - computes alphabet
- *@n: absolute
+ * jack_bauer - computes alphabet
  * Return: Always 0
  */
-int _abs(int n)
+void jack_bauer(void)
 {
-	if (n < 0)
-	{
-		n = n * -1;
-	}
-	return (n);
+int i, j;
+for (i = 0; i < 24; i++)
+{
+for (j = 0; j < 60; j++)
+{
+if (i < j && i != j)
+{
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
+putchar(58);
+putchar ((j / 10) + '0');
+putchar ((j % 10) + '0');
 }
