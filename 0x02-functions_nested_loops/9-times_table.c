@@ -20,15 +20,9 @@ else
 {
 _putchar((n % 10) + '0');
 }
-if (j < 9 && n > 10)
+if (j < 9)
 {
 _putchar(44);
-_putchar(' ');
-}
-if (j < 9 && n < 10)
-{
-_putchar(44);
-_putchar(' ');
 _putchar(' ');
 }
 }
