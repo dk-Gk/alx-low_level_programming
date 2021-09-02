@@ -20,7 +20,7 @@ _putchar((n % 10) + '0');
 }
 else
 {
-_putchar((res % 10) + '0');
+_putchar((n % 10) + '0');
 }
 if (j < 9)
 {
