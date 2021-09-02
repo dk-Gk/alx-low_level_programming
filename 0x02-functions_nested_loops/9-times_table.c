@@ -29,7 +29,7 @@ if (j < 9 && n < 10)
 {
 _putchar(44);
 _putchar(' ');
-_putchar(' ')
+_putchar(' ');
 }
 }
 _putchar('\n');
