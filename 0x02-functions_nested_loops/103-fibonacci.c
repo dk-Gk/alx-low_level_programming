@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-unsigned long count, i = 0, j = 1, z, s = 0;
+unsigned long c, i = 0, j = 1, z, s = 0;
 for (c = 0; c < 50; c++)
 {
 z = i + j;
