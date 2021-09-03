@@ -12,7 +12,7 @@ k = i + j;
 i = j;
 j = k;
 printf("%lu", k);
-if (count == 49)
+if (c == 49)
 putchar('\n');
 else
 {
