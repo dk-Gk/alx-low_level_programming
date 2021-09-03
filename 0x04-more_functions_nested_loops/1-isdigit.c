@@ -6,15 +6,12 @@
  */
 int _isdigit(int c)
 {
-int i = 0;
-int b;
-for (b = 0; b <= 9; b++)
+if (c >= '0' && c <= '9')
 {
-if (c == b)
+return (1);
+}
+else
 {
-i = 1;
+return (0);
 }
-break;
-}
-return (i);
 }
