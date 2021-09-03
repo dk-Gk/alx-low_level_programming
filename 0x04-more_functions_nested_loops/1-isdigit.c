@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _isdigit - check digit
+ * _isdigit - check digit
  *@c: the number to be checked
  * Return: 1 if true and 0 if not
  */
@@ -13,6 +13,7 @@ for (b = 0; b <= 9; b++)
 if (c == b)
 {
 i = 1;
+break;
 }
 }
 return (i);
