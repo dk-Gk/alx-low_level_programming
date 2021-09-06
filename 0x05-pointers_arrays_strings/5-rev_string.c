@@ -14,7 +14,5 @@ c = c + 1;
 c--;
 for (; c >= 0; c--)
 {
-_putchar(s[c]);
-}
-_putchar('\n');
+s[c];
 }
