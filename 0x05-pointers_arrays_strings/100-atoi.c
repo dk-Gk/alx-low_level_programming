@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-unsigned int i = 0, a = 0, b = 0, c = 1, d = 1, n;
+unsigned int i = 0, a = 0, b = 0, c = 1, d = 1, n, r;
 while (s[i])
 {
 if (a > 0 && (s[i] < '0' || s[i] > '9'))
@@ -33,5 +33,6 @@ for (n = i - a; n < i; n++)
 b = b + ((s[n] - 48) * d);
 d /= 10;
 }
-return (b * c);
+r = b * c
+return (r);
 }
