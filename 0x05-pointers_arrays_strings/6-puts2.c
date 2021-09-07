@@ -12,9 +12,9 @@ while (str[c])
 c = c + 1;
 }
 _putchar(str[0]);
-for (i = 1; i <= c - 2; i++)
+for (i = 1; i <= c / 2; i++)
 {
-_putchar(str[i + 2]);
+_putchar(str[i + i]);
 }
 _putchar('\n');
 }
