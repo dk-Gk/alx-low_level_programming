@@ -12,7 +12,7 @@ while (str[c])
 c = c + 1;
 }
 i = c / 2;
-for (; i <= c; i++)
+for (; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
