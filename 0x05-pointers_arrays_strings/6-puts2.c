@@ -11,9 +11,9 @@ while (str[c])
 {
 c = c + 1;
 }
-for (i = 0; i <= c; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-if(i % 2 == 0)
+if (i % 2 == 0)
 {
 _putchar(str[i]);
 }
