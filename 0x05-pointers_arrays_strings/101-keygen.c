@@ -2,9 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void randomPasswordGeneration(int N)
+/**
+ * main - Program that generates random valid passwords
+ * @void: Empty input
+ * Return: zero
+ */
+int main(void)
 {
 int i = 0;
+int N = 10;
 int randomizer = 0;
 srand((unsigned int)(time(NULL)));
 char numbers[] = "0123456789";
@@ -40,4 +46,5 @@ randomizer = rand() % 4;
 printf("%c", password[i]);
 }
 }
+return (0);
 }
