@@ -16,5 +16,3 @@ for (i = 1; i <= c / 2; i++)
 {
 _putchar(str[i + i]);
 }
-_putchar('\n');
-}
