@@ -2,14 +2,14 @@
 #include <stdio.h>
 /**
  * print_array - function that prints elements of array
- * @str: pointer value
+ * @a: pointer value
  *@n: number of elements
  * Return: nothing
  */
 void print_array(int *a, int n)
 {
 int i;
-for (i = 0; i <= n; i++)
+for (i = 0; i < n; i++)
 {
 printf("%d", a[i]);
 if (i < n - 1)
