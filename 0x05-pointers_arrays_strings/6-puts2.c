@@ -11,9 +11,11 @@ while (str[c])
 {
 c = c + 1;
 }
-_putchar(str[0]);
-for (i = 1; i <= c / 2; i++)
+for (i = 0; i <= c; i++)
 {
-_putchar(str[i + i]);
+if(i % 2 == 0)
+{
+_putchar(str[i]);
 }
+_putchar('\n');
 }
