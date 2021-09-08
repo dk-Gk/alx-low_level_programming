@@ -23,6 +23,6 @@ i++;
 for (c = i; str[c] != '\0'; c++)
 {
 _putchar(str[c]);
-_putchar('\n');
 }
+_putchar('\n');
 }
