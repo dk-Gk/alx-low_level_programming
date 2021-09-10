@@ -14,5 +14,5 @@ for(j=0; src[j]!='\0'; ++j, ++i)
 str1[i]=str2[j];
 }
 str1[i]='\0';
-return (dest);
+return (*dest);
 }
