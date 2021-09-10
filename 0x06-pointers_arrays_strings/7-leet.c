@@ -6,7 +6,7 @@
  */
 char *leet(char *c)
 {
-int i,j;
+int i, j;
 char l[] = "aeotl";
 char ll[] = "AEOTL";
 char n[] = "43071";
