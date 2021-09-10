@@ -12,7 +12,7 @@ for (i = 0; dest[i] != '\0'; i++)
 {
 c = c + 1;
 }
-for (i = 0; src[j] != '\0'; i++)
+for (j = 0; src[j] != '\0'; i++)
 {
 dest[c] = src[j];
 c++;
