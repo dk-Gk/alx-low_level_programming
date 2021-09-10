@@ -11,11 +11,11 @@ char d[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char e[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 for (i = 0; rot[i] != '\0';)
 {
-i++
+i++;
 }
 for (j = 0; d[j] != '\0';)
 {
-j++
+j++;
 }
 if (rot[i] == d[j])
 {
