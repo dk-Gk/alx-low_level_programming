@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - find char in string
  * @s: pointer
@@ -15,5 +16,5 @@ return (s);
 }
 s++;
 }
-return ('\0');
+return (NULL);
 }
