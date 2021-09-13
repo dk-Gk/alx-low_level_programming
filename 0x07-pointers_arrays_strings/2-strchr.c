@@ -8,7 +8,6 @@
 char *_strchr(char *s, char c)
 {
 int i = 0;
-/*char *j;*/
 while (s[i] != '\0')
 {
 if (s[i] == c)
@@ -21,6 +20,5 @@ return ('\0');
 }
 i++;
 }
-/*j = s[i];*/
 return (*(s + i));
 }
