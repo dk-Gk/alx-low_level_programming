@@ -7,10 +7,9 @@
  */
 char *_strchr(char *s, char c)
 {
-int i = 0;
-while (s[i] != '\0')
+while (*s != '\0')
 {
-if (s[i] == c)
+if (*s == c)
 {
 break;
 }
@@ -18,7 +17,7 @@ else
 {
 return ('\0');
 }
-i++;
+s++;
 }
-return (*(s + i));
+return (s);
 }
