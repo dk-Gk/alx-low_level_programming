@@ -8,9 +8,13 @@
 int pow1(int i, int n)
 {
 if ((i * i) > n)
+{
 return (-1);
+}
 if (i * i == n)
+{
 return (i);
+}
 i++;
 return (pow1(i, n));
 }
@@ -27,6 +31,6 @@ return (1);
 }
 else
 {
-return (_sqrt_recursion(n));
+return ((pow1(2, n));
 }
 }
