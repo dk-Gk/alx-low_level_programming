@@ -13,7 +13,7 @@ return (0);
 }
 if (x == n / 2)
 return (1);
-return (primito(++x, n));
+return (pr(++x, n));
 }
 /**
  * is_prime_number - check number wether its prime or not
@@ -33,4 +33,5 @@ return (0);
 else
 {
 return (pr(2, n));
+}
 }
