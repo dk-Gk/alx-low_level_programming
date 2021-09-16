@@ -6,7 +6,7 @@ int s_len(char *s);
 * @s: string to be checked
 * Return: 1 if true or 0 false
 */
-int s_len(char *s)
+int is_palindrome(char *s)
 {
 if (*s == '\0')
 return (1);
