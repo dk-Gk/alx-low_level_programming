@@ -6,11 +6,11 @@ int s_len(char *s);
 * @s: string to be checked
 * Return: 1 if true or 0 false
 */
-int is_palindrome(char *s)
+int s_len(char *s)
 {
 if (*s == '\0')
 return (1);
-return (check(s, 0, pal_strlen(s)));
+return (check(s, 0, s_len(s)));
 }
 
 /**
