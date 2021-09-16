@@ -31,6 +31,6 @@ return (1);
 }
 else
 {
-return ((pow1(2, n););
+return (pow1(2, n));
 }
 }
