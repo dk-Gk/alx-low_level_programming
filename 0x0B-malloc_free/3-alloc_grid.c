@@ -18,6 +18,13 @@ p = malloc(height * sizeof(*p));
 for (i = 0; i < height; i++)
 {
 p[i] = malloc(width * sizeof(**p));
+if (p[i] == NULL)
+{
+for (i--; i >= 0; i--)
+free(p[i]);
+free(p);
+return (NULL);
+}
 }
 for (k = 0; k < width; k++)
 {
