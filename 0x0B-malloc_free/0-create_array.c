@@ -13,12 +13,16 @@ char *p;
 unsigned int i;
 if (size == 0)
 {
-return(NULL);
+return (NULL);
 }
 p = malloc(size * sizeof(*p));
+if (!p)
+{
+return (NULL);
+}
 for (i = 0; i < size; i++)
 {
 p[i] = c;
 }
-return(p);
+return (p);
 }
