@@ -10,7 +10,7 @@ char *_strdup(char *str)
 {
 char *p;
 int i, c = 0;
-if(!str)
+if (!str)
 {
 return (NULL);
 }
@@ -27,5 +27,5 @@ for (i = 0; i < (c + 1); i++)
 {
 p[i] = str[i];
 }
-return(p);
+return (p);
 }
