@@ -16,10 +16,16 @@ return(NULL);
 }
 for (i = 0; str[i] <= '\0'; i++)
 {
-*p = str[i];
 c++;
-p++;
 }
 p = malloc(sizeof(char) * c);
+if (!p)
+{
+return (NULL);
+}
+for (i = 0; i < c; i++)
+{
+p[i] = str[i];
+}
 return(p);
 }
