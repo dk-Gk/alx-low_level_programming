@@ -6,28 +6,29 @@
  * @height: int size height
  * Return: Pointer to new grid
  */
-
 int **alloc_grid(int width, int height)
 {
-int **grid;
-int i, j;
-if (width + height < 2 || width < 1 || height < 1)
+int i, j, k;
+if (width <= 0 || height <= 0)
+{
 return (NULL);
-grid = malloc(height * sizeof(*grid));
-if (grid == NULL)
-return (NULL);
+}
+int **p;
+p = malloc(height * sizeof(*p));
 for (i = 0; i < height; i++)
 {
-grid[i] = malloc(width * sizeof(**grid));
-if (grid[i] == NULL)
+p[i] = malloc(width * sizeof(**p));
+}
+for (k = 0; k < width; k++)
 {
-for (i--; i >= 0; i--)
-free(grid[i]);
-free(grid);
+for (j = 0; j < height; j++)
+{
+p[k][j] = 0;
+}
+}
+if (!p)
+{
 return (NULL);
 }
-for (j = 0; j < width; j++)
-grid[i][j] = 0;
-}
-return (grid);
+return (p);
 }
