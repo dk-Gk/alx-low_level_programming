@@ -11,20 +11,18 @@ char *str_concat(char *s1, char *s2)
 {
 char *p;
 int size = 0, size2 = 0, i;
-while(*s1 != '\0')
+for (i = 0; s1[i] != '\0'; i++)
 {
 size++;
-s1++;
 }
-while(*s2 != '\0')
+for (i = 0; str[i] != '\0'; i++)
 {
 size2++;
-s2++;
 }
-p = malloc(sizeof(*p) * size + size2);
-for (i = 0; i <= size + size2; i++)
+p = malloc(sizeof(char) * (size + (size2 + 1));
+for (i = 0; i <= (size + (size2 + 1)); i++)
 {
-if(i < size && s1[i] != '\0')
+if (i < size && s1[i] != '\0')
 {
 p[i] = s1[i];
 }
@@ -33,5 +31,5 @@ else
 p[i] = s2[i];
 }
 }
-return(p);
+return (p);
 }
