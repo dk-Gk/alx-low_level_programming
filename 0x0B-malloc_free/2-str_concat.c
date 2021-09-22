@@ -15,11 +15,11 @@ for (i = 0; s1[i] != '\0'; i++)
 {
 size++;
 }
-for (i = 0; str[i] != '\0'; i++)
+for (i = 0; s2[i] != '\0'; i++)
 {
 size2++;
 }
-p = malloc(sizeof(char) * (size + (size2 + 1));
+p = malloc(sizeof(char) * (size + (size2 + 1)));
 for (i = 0; i <= (size + (size2 + 1)); i++)
 {
 if (i < size && s1[i] != '\0')
