@@ -9,13 +9,15 @@
  */
 int main(int argc, char **argv)
 {
-int size1 = 0, size2 = 0, i = 0, t = 0, p = 0, o = 0, ps = 0;
+int size1 = 0, size2 = 0, i = 0, t = 0, p = 0, o = 0, ps = 0, j;
 while (argv[1][size1])
 {
+ISDIGIT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\##################
 size1++;
 }
 while (argv[2][size2])
 {
+ISITADIGIT########################################################
 size2++;
 }
 ps = size1 + size2 + 1;
@@ -48,6 +50,7 @@ size2--;
 t++;
 }
 p[i] ='\0';
+reversestring\\\\\###########################################################
 printf("%s\n", p);
 free(p);
 return (0);
