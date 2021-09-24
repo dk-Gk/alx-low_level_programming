@@ -10,13 +10,13 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *t = NULL;
+char *t;
 unsigned int size1, size2;
-if (s1 == NULL)
+if (!s1)
 {
 s1 = "";
 }
-if (s2 == NULL)
+if (!s2)
 {
 s2 = "";
 }
