@@ -32,7 +32,7 @@ i = t;
 for (j = size1; j >= 0; j--)
 {
 p = (argv[1][j]-'0') * (argv[2][size2]-'0');
-p += p[index] -'0';
+p += p[i] -'0';
 p += o;
 o = p / 10;
 p[i] = p % 10 + '0';
@@ -40,7 +40,7 @@ i++;
 }
 if (o)
 {
-p[index] = o;
+p[i] = o;
 i++;
 }
 o = 0;
