@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include "dog.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * new_dog - create new dog
+ * @name: name of the dog
+ * @age: age of dog
+ * @owner: The dog owner's name
+ * Return: NULL if the function fails.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
