@@ -11,7 +11,7 @@ int op_add(int a, int b)
 return (a + b);
 }
 /**
- * op_add - difference of two numbers
+ * op_sub - difference of two numbers
  * @a: the first number
  * @b: the second number
  * Return: result
@@ -21,7 +21,7 @@ int op_sub(int a, int b)
 return (a - b);
 }
 /**
- * op_add - multiply two numbers
+ * op_mul - multiply two numbers
  * @a: the first number
  * @b: the second number
  * Return: result
