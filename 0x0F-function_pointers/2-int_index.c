@@ -15,6 +15,8 @@ if (size <= 0)
 {
 return (-1);
 }
+if (size > 0 && array && cmp)
+{
 for (i = 0; i < size; i++)
 {
 r = cmp(array[i]);
@@ -24,6 +26,6 @@ r = i;
 break;
 }
 }
-
+}
 return (r);
 }
