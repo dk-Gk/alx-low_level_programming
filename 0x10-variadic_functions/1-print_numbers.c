@@ -20,6 +20,6 @@ if (i < n - 1 && separator)
 printf("%s", separator);
 }
 }
-va_end(ap);
+va_end(l);
 printf("\n");
 }
