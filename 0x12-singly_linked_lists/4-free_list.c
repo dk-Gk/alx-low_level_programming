@@ -1,0 +1,17 @@
+#include "lists.h"
+/**
+ * free_list - frees a list_t list
+ * @head: head
+ * Return: nothing
+ */
+void free_list(list_t *head)
+{
+list_t *p;
+while (head)
+{
+p = head;
+head = head->next;
+free(p->str);
+free(p);
+}
+}
