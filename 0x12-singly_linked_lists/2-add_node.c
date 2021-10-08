@@ -14,7 +14,7 @@ if (n)
 for (i = 0; str[i]; i++)
 ;
 n->str = strdup(str);
-n>len = i;
+n->len = i;
 n->next = *head;
 *head = n;
 return (n);
