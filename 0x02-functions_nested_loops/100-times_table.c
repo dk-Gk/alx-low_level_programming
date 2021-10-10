@@ -26,7 +26,7 @@ _putchar (mul + '0');
 }
 else
 {
-if (mul < 100)
+if (mul > 9 && mul < 100)
 {
 _putchar (' ');
 _putchar (' ');
