@@ -6,41 +6,51 @@
  */
 void print_times_table(int n)
 {
-int a = 0, b, c;
-if (n > 15 || n < 0)
-return;
-while (a <= n)
+int i = 0, mul, j;
+if (n > 0 && n < 15)
 {
-for (b = 0; b <= n; b++)
+while (i < n + 1)
 {
-c = a * b;
-if (c > 99)
+j = 0;
+while (j < n + 1)
 {
-_putchar(c / 100 + '0');
-_putchar((c / 10 % 10) + '0');
-_putchar(c % 10 + '0');
+mul = i * j;
+if (mul < 10)
+{
+if (j > 0)
+{
+_putchar (' ');
+_putchar (' ');
+_putchar (' ');
 }
-else if (c > 9)
-{
-_putchar(' ');
-_putchar(c / 10 + '0');
-_putchar(c % 10 + '0');
-}
-else if (b != 0)
-{
-_putchar(' ');
-_putchar(' ');
-_putchar(b + '0');
+_putchar (mul + '0');
 }
 else
-_putchar(b + '0');
-if (b != n)
 {
-_putchar(',');
-_putchar(' ');
+if (mul < 100)
+{
+_putchar (' ');
+_putchar (' ');
+_putchar (mul / 10 + '0');
+_putchar (mul % 10 + '0');
+}
+else
+{
+_putchar (' ');
+_putchar (mul / 100 + '0');
+_putchar (mul / 10 % 10 + '0');
+_putchar (mul % 10 + '0');
 }
 }
-_putchar('\n');
-a++;
+if (j < n)
+{
+_putchar (',');
+_putchar (' ');
+}
+j++;
+}
+_putchar ('\n');
+i++;
+}
 }
 }
