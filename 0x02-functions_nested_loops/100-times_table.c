@@ -29,7 +29,6 @@ else
 if (mul > 9 && mul < 100)
 {
 _putchar (' ');
-_putchar (' ');
 _putchar (mul / 10 + '0');
 _putchar (mul % 10 + '0');
 }
