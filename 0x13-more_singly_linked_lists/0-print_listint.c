@@ -5,7 +5,7 @@
 
 /**
  * print_listint - print elements in the linked list
- * @h - head pointer
+ * @h: - head pointer
  * Return: num of nodes
  */
 size_t print_listint(const listint_t *h)
