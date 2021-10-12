@@ -11,7 +11,6 @@ while (*head)
 {
 fr = *head;
 *head = *head->next;
-free(fr->n);
 free(p);
 }
 *head = NULL;
