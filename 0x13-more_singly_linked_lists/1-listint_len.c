@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_listint - return num of elements
- * @h - head pointer
+ * listint_len - return num of elements
+ * @h: - head pointer
  * Return: num of elements
  */
 size_t listint_len(const listint_t *h)
