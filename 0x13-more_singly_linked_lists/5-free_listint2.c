@@ -10,7 +10,7 @@ list_t *fr;
 while (*head)
 {
 fr = *head;
-*head = *head->next;
+*head = (*head)->next;
 free(p);
 }
 *head = NULL;
