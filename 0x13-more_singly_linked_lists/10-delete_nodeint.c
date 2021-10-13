@@ -29,7 +29,7 @@ temp->next = new->next;
 free(new);
 return (1);
 }
-temp = temp->next
+temp = temp->next;
 i++;
 }
 return (-1);
