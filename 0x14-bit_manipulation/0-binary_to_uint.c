@@ -8,18 +8,11 @@
  */
 unsigned int p(unsigned int i, unsigned int j)
 {
-unsigned int k = 1, r;
-r = i;
-if (j == 0)
-{
-return (1);
-}
-while (k != j)
-{
-r = i * r;
-k++;
-}
-return (r);
+unsigned long int num = 1;
+unsigned int k;
+for (k = 1; k <= j; k++)
+num *= i;
+return (num);
 }
 /**
  * binary_to_uint - converts a binary number to an unsigned int
