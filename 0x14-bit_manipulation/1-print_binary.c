@@ -1,25 +1,21 @@
 #include <stdio.h>
 #include "main.h"
-/**
- * p - calc power of number
- * @i: number 2
- * @j: number of times i is raised to
- * Return: the result
- */
-unsigned int p(unsigned int i, unsigned int j)
+ /**
+  * _pow - calculates (base ^ power)
+  * @base: base of the exponent
+  * @power: power of the exponent
+  *
+  * Return: value of (base ^ power)
+  */
+unsigned long int _pow(unsigned int base, unsigned int power)
 {
-unsigned int k = 1, r;
-r = i;
-if (j == 0)
-{
-return (1);
-}
-while (k != j)
-{
-r = i * r;
-k++;
-}
-return (r);
+unsigned long int num;
+unsigned int i;
+
+num = 1;
+for (i = 1; i <= power; i++)
+num *= base;
+return (num);
 }
 /**
  * print_binary - prints the binary representation of a number
