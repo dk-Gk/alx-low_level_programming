@@ -12,11 +12,10 @@
  */
 size_t len(char *s)
 {
-	size_t i;
-
-	for (i = 0; str[i]; i++)
-		;
-	return (i);
+size_t i;
+for (i = 0; s[i]; i++)
+;
+return (i);
 }
 /**
  * create_file - creates a file
@@ -28,8 +27,8 @@ int create_file(const char *filename, char *text_content)
 {
 int fd;
 ssize_t w;
-size_t count = 0;
-/*while ( *text_content != '\0')
+/*size_t count = 0;
+while ( *text_content != '\0')
 {
 count++;
 text_content++;
