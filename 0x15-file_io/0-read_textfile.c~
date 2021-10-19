@@ -39,5 +39,5 @@ wrlen = write(STDOUT_FILENO, buff, rdlen);
 free(buff);
 if (rdlen != wrlen)
 return (0);
-return (wrlen);
+return (wrlen++);
 }
