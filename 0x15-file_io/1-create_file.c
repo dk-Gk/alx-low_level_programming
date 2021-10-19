@@ -4,10 +4,24 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
+
+/**
+ * len - finds the length of a string
+ * @s: pointer to the string
+ * Return: length of the string
+ */
+size_t len(char *s)
+{
+	size_t i;
+
+	for (i = 0; str[i]; i++)
+		;
+	return (i);
+}
 /**
  * create_file - creates a file
  * @filename: name of the file to create
- * @text_content:  is a NULL terminated string to write to the file
+ * @text_content: is a NULL terminated string to write to the file
  * Return: 1 on success, -1 on failure
  */
 int create_file(const char *filename, char *text_content)
@@ -15,11 +29,11 @@ int create_file(const char *filename, char *text_content)
 int fd;
 ssize_t w;
 size_t count = 0;
-while ( *text_content != '\0')
+/*while ( *text_content != '\0')
 {
 count++;
 text_content++;
-}
+}*/
 if (filename == NULL)
 {
 return (-1);
@@ -31,7 +45,7 @@ return (-1);
 }
 if (text_content != NULL)
 {
-w = write (fd, text_content, count);
+w = write (fd, text_content, len(text_content));
 }
 close (fd);
 if (w == -1)
