@@ -12,8 +12,8 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-int fd, count = 0;
-ssize_t w;
+int fd;
+ssize_t w, count = 0;
 while ( *text_content != '\0')
 {
 count++;
