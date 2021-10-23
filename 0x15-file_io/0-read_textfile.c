@@ -35,7 +35,7 @@ if (size_r == -1)
 return (0);
 }
 size_w = write(STDOUT_FILENO, rd, size_r);
-close (fd);
+close(fd);
 if (size_w == -1 || size_w != size_r)
 {
 return (0);
