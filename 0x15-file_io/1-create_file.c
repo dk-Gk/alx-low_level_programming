@@ -39,11 +39,11 @@ return (-1);
 empty = malloc(sizeof(char));
 if (text_content != NULL)
 {
-w = write (fd, text_content, len(text_content));
+w = write(fd, text_content, len(text_content));
 }
 else
-w = write (fd, empty, 1);
-close (fd);
+w = write(fd, empty, 1);
+close(fd);
 if (w == -1)
 {
 return (-1);
