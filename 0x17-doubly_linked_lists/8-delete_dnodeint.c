@@ -18,7 +18,7 @@ return (-1);
 }
 while (temp)
 {
-temp = curr_node->next;
+temp = temp->next;
 count++;
 }
 if (count < index + 1)
