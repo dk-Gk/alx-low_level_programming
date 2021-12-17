@@ -30,7 +30,5 @@ if (temp == NULL)
 return (NULL);
 }
 else
-{
-return (current->value);
-}
+return (temp->value);
 }
