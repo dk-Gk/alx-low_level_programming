@@ -11,38 +11,38 @@
 
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-int step = (int)(sqrt(size)), prev = 0, i = 0;
-listint_t *tmp = list;
+size_t i = 0, j = sqrt(size), k = 0, last_j = 0;
+listint_t *last = list;
 
-if (list == NULL)
+if (!list)
 return (NULL);
 
-for (i = tmp->index; i < step && i < (int)size; i++)
-tmp = tmp->next;
-
-while (step < (int)size && tmp->n < value)
+while (list->n < value)
 {
-printf("Value checked array[%i] = [%i]\n", step, tmp->n);
-prev = step;
-step += (int)(sqrt(size));
-for (i = tmp->index; i < step && i < (int)size - 1; i++)
-tmp = tmp->next;
-if (prev >= (int)size)
-return (NULL);
+for (last_j = i, last = list, k = 0; list->next && k < j; k++)
+{
+list = list->next;
+i++;
 }
-if (step > (int)(size - 1))
-step = (int)size - 1;
-printf("Value checked array[%i] = [%i]\n", step, tmp->n);
-printf("Value found between indexes [%i] and [%i]\n", prev, step);
-tmp = list;
-for (i = tmp->index; i < prev; i++)
-tmp = tmp->next;
-for (i = prev; i <= step && tmp->n <= value; i++)
+printf("Value checked at index [%lu] = [%d]\n", i, list->n);
+if (!list->next)
+break;
+}
+
+if (!list->next)
+j = last_j;
+else
+j = i >= j ? i - j : 0;
+printf("Value found between indexes [%lu] and [%lu]\n", j, i);
+i = i >= size ? size - 1 : i;
+list = last;
+while (list)
 {
-printf("Value checked array[%i] = [%i]\n", i, tmp->n);
-if (tmp->n == value)
-return (tmp);
-tmp = tmp->next;
+printf("Value checked at index [%lu] = [%d]\n", j, list->n);
+if (list->n == value)
+return (list);
+j++;
+list = list->next;
 }
 return (NULL);
 }
