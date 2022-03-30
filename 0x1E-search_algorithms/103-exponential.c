@@ -30,7 +30,7 @@ return (ret == -1 ? ret : ret + (int)i);
 }
 
 /**
- * binarySearch - binary search
+ * binary_search - binary search
  * @arr: array to search the value in
  * @left: the lowest index
  * @right: the highest index
