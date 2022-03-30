@@ -19,7 +19,7 @@ return (-1);
 }
 while (left < size)
 {
-mid = ((size + left) / 2);
+mid = ((size - 1 + left) / 2);
 
 printf("Searching in array: ");
 
