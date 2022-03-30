@@ -10,10 +10,10 @@
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-  if (!array || size == 0)
-    return (-1);
+if (!array || size == 0)
+return (-1);
 
-  return (binarySearch(array, 0, size - 1, value));
+return (binarySearch(array, 0, size - 1, value));
 }
 
 /**
@@ -26,30 +26,32 @@ int advanced_binary(int *array, size_t size, int value)
  */
 int binarySearch(int arr[], size_t left, size_t right, int value)
 {
-if (array == NULL)
+int mid;
+size_t i;
+if (arr == NULL)
 return (-1);
 
 if (left <= right)
 {
 printf("Searching in array:");
-for (size_t i = left; i <= right; i++)
+for (i = left; i <= right; i++)
 {
-printf(" %i", array[i]);
+printf(" %i", arr[i]);
 if (i != right)
 printf(",");
 }
 printf("\n");
 
-int mid = ((right + left) / 2);
+mid = ((right + left) / 2);
 
-if (value > array[mid])
-return (binarySearch(array, mid + 1, right, value));
-if (value < array[mid])
-return (binarySearch(array, left, mid - 1, value));
+if (value > arr[mid])
+return (binarySearch(arr, mid + 1, right, value));
+if (value < arr[mid])
+return (binarySearch(arr, left, mid - 1, value));
 else
 {
-if (value == array[mid - 1])
-return (binarySearch(array, left, mid, value));
+if (value == arr[mid - 1])
+return (binarySearch(arr, left, mid, value));
 else
 return (mid);
 }
