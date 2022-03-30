@@ -31,9 +31,8 @@ return (ret == -1 ? ret : ret + (int)i);
 
 /**
  * binary_search - binary search
- * @arr: array to search the value in
- * @left: the lowest index
- * @right: the highest index
+ * @array: array to search the value in
+ * @size: size of array
  * @value: value
  * Return: the first index or -1 if not found
  */
