@@ -33,6 +33,6 @@ for (n = i - a; n < i; n++)
 b = b + ((s[n] - 48) * d);
 d /= 10;
 }
-r = (c * b);
+r = (c *b);
 return (r);
 }
