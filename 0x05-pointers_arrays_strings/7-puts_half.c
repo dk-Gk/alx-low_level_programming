@@ -20,7 +20,7 @@ else
 i = (c / 2);
 }
 i++;
-for (c = i - 1; str[c] != '\0'; c++)
+for (c = i; str[c] != '\0'; c++)
 {
 _putchar(str[c]);
 }
